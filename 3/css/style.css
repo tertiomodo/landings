@@ -53,6 +53,8 @@ body {
 }
 
 .download__link {
+  padding-left: 30px;
+  background: url('../img/download.png') no-repeat left center / 25px 25px;
   font-weight: 700;
   font-size: 18px;
   color: #3f2aff;
