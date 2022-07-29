@@ -83,6 +83,7 @@ h3 {
 
 .gray-block__image-footer {
   background-image: url('../img/decorate-2.png');
+  background-size: contain;
 }
 
 .gray-block:not(:last-child) {
@@ -131,6 +132,7 @@ figure {
   display: inline-block;
   margin: 0 0 40px;
   width: 872px;
+  font-size: 0;
 }
 
 figure figcaption {
@@ -139,5 +141,6 @@ figure figcaption {
   padding: 19px 0;
   font-weight: 400;
   text-align: center;
+  font-size: 18px;
 
 }
