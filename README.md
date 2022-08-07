@@ -1,3 +1,3 @@
-Lagoona https://tertiomodo.github.io/SB-tasks/lagoona/
+Lagoona: https://tertiomodo.github.io/SB-tasks/lagoona/
 
-Lionic https://tertiomodo.github.io/SB-tasks/lionic/
+Lionic: https://tertiomodo.github.io/SB-tasks/lionic/
