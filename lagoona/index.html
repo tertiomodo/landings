@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Lagoona</title>
 </head>
 <body>
   <!--Header Start-->
   <header class="header">
     <div class="container">
-      <div class="header__top">
+      <div class="header__top flex">
         <a class="header__logo-link" href="#">
           <img src="img/lagoona-logo.svg" alt="Lagoona Logo">
         </a>
@@ -21,10 +23,9 @@
           Личный кабинет
         </a>
       </div>
-      <div class="header__bottom">
-        <div class="container">
+      <div class="header__bottom flex">
           <nav class="header-nav">
-            <ul class="header-nav__list">
+            <ul class="header-nav__list flex list-style-none">
               <li class="header-nav__item">
                 <a class="header-nav__link" href="#">
                   О&nbsp;нас
@@ -57,15 +58,14 @@
               </li>
             </ul>
           </nav>
-          <div class="header__buttons">
-            <button class="header__buttons-btn">
+          <div class="header__buttons buttons-header">
+            <button class="buttons-header__btn">
               Хочу тур
             </button>
-            <button class="header__buttons-btn">
+            <button class="buttons-header__btn">
               Обратный звонок
             </button>
           </div>
-        </div>
       </div>
     </div>
   </header>
@@ -78,8 +78,8 @@
         <h2 class="title">
           Спецпредложения
         </h2>
-        <div class="offers__content">
-          <div class="small-banner">
+        <div class="offers__content flex">
+          <div class="small-banner flex">
             <article class="small-banner__item">
               <h3 class="small-banner__title">
                 Мальдивские острова
@@ -136,7 +136,7 @@
         <h2 class="title">
           Услуги
         </h2>
-        <ul class="services__card-list">
+        <ul class="services__card-list flex list-style-none">
           <li class="services__card-item">
             <div class="services__card-img">Card Image</div>
             <div class="services__card-content card-content">
@@ -187,55 +187,47 @@
     <!--Services End-->
     <!--Advantages Start-->
     <section class="advantages">
-      <div class="cantainer">
+      <div class="container">
         <h2 class="title">
           Преимущества
         </h2>
-        <ul class="advantages__card-list">
+        <ul class="advantages__card-list flex list-style-none">
           <li class="advantages__card-item card-item">
-            <div class="card-item__img">Card Image</div>
             <p class="card-item__paragraph">
               Идейные соображения высшего порядка, а&nbsp;также постоянный количественный рост
             </p>
           </li>
           <li class="advantages__card-item card-item">
-            <div class="card-item__img">Card Image</div>
             <p class="card-item__paragraph">
               Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
             </p>
           </li>
           <li class="advantages__card-item card-item">
-            <div class="card-item__img">Card Image</div>
             <p class="card-item__paragraph">
               Таким образом реализация плановых заданий играет важную роль для понимания
             </p>
           </li>
           <li class="advantages__card-item card-item">
-            <div class="card-item__img">Card Image</div>
             <p class="card-item__paragraph">
               Повседневная практика показывает, что сложившаяся структура организации
             </p>
           </li>
           <li class="advantages__card-item card-item">
-            <div class="card-item__img">Card Image</div>
             <p class="card-item__paragraph">
               Равным образом рамки и&nbsp;место обучения кадров способствует подготовки сотрудника
             </p>
           </li>
           <li class="advantages__card-item card-item">
-            <div class="card-item__img">Card Image</div>
             <p class="card-item__paragraph">
               Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения услуг нашего сервиса
             </p>
           </li>
           <li class="advantages__card-item card-item">
-            <div class="card-item__img">Card Image</div>
             <p class="card-item__paragraph">
               Повседневная практика показывает, что дальнейшее развитие различных
             </p>
           </li>
           <li class="advantages__card-item card-item">
-            <div class="card-item__img">Card Image</div>
             <p class="card-item__paragraph">
               Значимость этого настолько очевидна, что консультация наших экспертов помогает
             </p>
@@ -244,212 +236,246 @@
       </div>
     </section>
     <!--Advantages End-->
-    <!--Accommodation Start-->
-    <section class="accommodation">
+    <!--Hotels Start-->
+    <section class="hotels">
       <div class="container">
         <h2 class="title">
           Размещение
         </h2>
-        <div class="accomodation__card">
-          <div class="accomodation__card-img">Hotel Image</div>
-          <div class="accomodation__card-content card-content">
-            <div class="card-content__information">
-              <span class="card-content__information__price">
-                от 4 698 / ночь
-              </span>
-              <span class="card-content__information__name-spain">
-                Lagoona española
-              </span>
-              <span class="card-content__information__name-ru">
-                Барселона, Испания
-              </span>
-              <button class="card-content__information__btn">Номера</button>
-            </div>
-            <div class="card-content__stars-wrapper stars-wrapper">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/empty-star.svg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="accomodation__card">
-          <div class="accomodation__card-img">Hotel Image</div>
-          <div class="accomodation__card-content card-content">
-            <div class="card-content__information">
-              <span class="card-content__information__price">
-                от 5 148 / ночь
-              </span>
-              <span class="card-content__information__name-spain">
-                Lagoona española
-              </span>
-              <span class="card-content__information__name-ru">
-                Барселона, Испания
-              </span>
-              <button class="card-content__information__btn">Номера</button>
-            </div>
-            <div class="card-content__stars-wrapper stars-wrapper">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/empty-star.svg" alt="">
+        <div class="hotels-card__wrapper flex">
+          <div class="hotels-card">
+            <img class="hotels-card__img" src="img/espanola.jpg" alt="Lagoona española">
+            <div class="hotels-card__content">
+              <div class="hotels-card__content-top flex">
+                <span class="hotels-card__content-text">
+                  <span class="hotels-card__color-gray">от</span> <span class="hotels-card__font-bold">4 698</span> / ночь
+                </span>
+                <div class="hotels-card__stars-wrapper">
+                  <img class="hotels-card__star" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
+                  <img class="hotels-card__star" src="img/star.svg" alt="">
+                  <img class="hotels-card__star" src="img/star.svg" alt="">
+                  <img class="hotels-card__star" src="img/star.svg" alt="">
+                  <img class="hotels-card__star" src="img/empty-star.svg" alt="">
+                </div>
+              </div>
+              <div class="hotels-card__content-bottom flex">
+                <span class="hotels-card__content-text">
+                  Lagoona española
+                </span>
+                <span class="hotels-card__content-text hotels-card__color-gray">
+                  Барселона, Испания
+                </span>
+                <button class="hotels-card__button">
+                  Номера
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accomodation__card">
-          <div class="accomodation__card-img">Hotel Image</div>
-          <div class="accomodation__card-content card-content">
-            <div class="card-content__information">
-              <span class="card-content__information__price">
-                от 6 254 / ночь
-              </span>
-              <span class="card-content__information__name-spain">
-                Lagoona española
-              </span>
-              <span class="card-content__information__name-ru">
-                Барселона, Испания
-              </span>
-              <button class="card-content__information__btn">Номера</button>
-            </div>
-            <div class="card-content__stars-wrapper stars-wrapper">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="accomodation__card">
-          <div class="accomodation__card-img">Hotel Image</div>
-          <div class="accomodation__card-content card-content">
-            <div class="card-content__information">
-              <span class="card-content__information__price">
-                от 6 320 / ночь
-              </span>
-              <span class="card-content__information__name-spain">
-                Lagoona española
-              </span>
-              <span class="card-content__information__name-ru">
-                Барселона, Испания
-              </span>
-              <button class="card-content__information__btn">Номера</button>
-            </div>
-            <div class="card-content__stars-wrapper stars-wrapper">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
+          <div class="hotels-card">
+            <img class="hotels-card__img" src="img/son-tipicas.jpg" alt="Lagoona son típicas">
+            <div class="hotels-card__content">
+              <div class="hotels-card__content-top flex">
+                <span class="hotels-card__content-text">
+                  <span class="hotels-card__color-gray">от</span> <span class="hotels-card__font-bold">5 148</span> / ночь
+                </span>
+                <div class="hotels-card__stars-wrapper">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/empty-star.svg" alt="">
+                </div>
+              </div>
+              <div class="hotels-card__content-bottom flex">
+                <span class="hotels-card__content-text">
+                  Lagoona son típicas
+                </span>
+                <span class="hotels-card__content-text hotels-card__color-gray">
+                  Барселона, Испания
+                </span>
+                <button class="hotels-card__button">
+                  Номера
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accomodation__card">
-          <div class="accomodation__card-img">Hotel Image</div>
-          <div class="accomodation__card-content card-content">
-            <div class="card-content__information">
-              <span class="card-content__information__price">
-                от 6 457 / ночь
-              </span>
-              <span class="card-content__information__name-spain">
-                Lagoona española
-              </span>
-              <span class="card-content__information__name-ru">
-                Барселона, Испания
-              </span>
-              <button class="card-content__information__btn">Номера</button>
-            </div>
-            <div class="card-content__stars-wrapper stars-wrapper">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/empty-star.svg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="accomodation__card">
-          <div class="accomodation__card-img">Hotel Image</div>
-          <div class="accomodation__card-content card-content">
-            <div class="card-content__information">
-              <span class="card-content__information__price">
-                от 6 320 / ночь
-              </span>
-              <span class="card-content__information__name-spain">
-                Lagoona española
-              </span>
-              <span class="card-content__information__name-ru">
-                Барселона, Испания
-              </span>
-              <button class="card-content__information__btn">Номера</button>
-            </div>
-            <div class="card-content__stars-wrapper stars-wrapper">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/empty-star.svg" alt="">
+          <div class="hotels-card">
+            <img class="hotels-card__img" src="img/de-la-guerra.jpg" alt="Lagoona de la guerra">
+            <div class="hotels-card__content">
+              <div class="hotels-card__content-top flex">
+                <span class="hotels-card__content-text">
+                  <span class="hotels-card__color-gray">от</span> <span class="hotels-card__font-bold">6 254</span> / ночь
+                </span>
+                <div class="hotels-card__stars-wrapper">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="Рейтинг отеля 5 из 5">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                </div>
+              </div>
+              <div class="hotels-card__content-bottom flex">
+                <span class="hotels-card__content-text">
+                  Lagoona de la guerra
+                </span>
+                <span class="hotels-card__content-text hotels-card__color-gray">
+                  Барселона, Испания
+                </span>
+                <button class="hotels-card__button">
+                  Номера
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accomodation__card">
-          <div class="accomodation__card-img">Hotel Image</div>
-          <div class="accomodation__card-content card-content">
-            <div class="card-content__information">
-              <span class="card-content__information__price">
-                от 6 505 / ночь
-              </span>
-              <span class="card-content__information__name-spain">
-                Lagoona española
-              </span>
-              <span class="card-content__information__name-ru">
-                Барселона, Испания
-              </span>
-              <button class="card-content__information__btn">Номера</button>
-            </div>
-            <div class="card-content__stars-wrapper stars-wrapper">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="accomodation__card">
-          <div class="accomodation__card-img">Hotel Image</div>
-          <div class="accomodation__card-content card-content">
-            <div class="card-content__information">
-              <span class="card-content__information__price">
-                от 6 824 / ночь
-              </span>
-              <span class="card-content__information__name-spain">
-                Lagoona española
-              </span>
-              <span class="card-content__information__name-ru">
-                Барселона, Испания
-              </span>
-              <button class="card-content__information__btn">Номера</button>
-            </div>
-            <div class="card-content__stars-wrapper stars-wrapper">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/star.svg" alt="">
-              <img class="stars-wrapper__star" src="img/empty-star.svg" alt="">
+          <div class="hotels-card">
+            <img class="hotels-card__img" src="img/mentira-piadosa.jpg" alt="Lagoona mentira piadosa">
+            <div class="hotels-card__content">
+              <div class="hotels-card__content-top flex">
+                <span class="hotels-card__content-text">
+                  <span class="hotels-card__color-gray">от</span> <span class="hotels-card__font-bold"> 6 320</span> / ночь
+                </span>
+                <div class="hotels-card__stars-wrapper">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="Рейтинг отеля 5 из 5">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                </div>
+              </div>
+              <div class="hotels-card__content-bottom flex">
+                <span class="hotels-card__content-text">
+                  Lagoona mentira piadosa
+                </span>
+                <span class="hotels-card__content-text hotels-card__color-gray">
+                  Барселона, Испания
+                </span>
+                <button class="hotels-card__button">
+                  Номера
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accomodation__card-view-all view-all">
-          <a class="view-all__link" href="#">
-            Посмотреть все варианты
-          </a>
+          <div class="hotels-card">
+            <img class="hotels-card__img" src="img/empujar-la-creatividad.jpg" alt="Lagoona empujar la creatividad">
+            <div class="hotels-card__content">
+              <div class="hotels-card__content-top flex">
+                <span class="hotels-card__content-text">
+                  <span class="hotels-card__color-gray">от</span> <span class="hotels-card__font-bold"> 6 457</span> / ночь
+                </span>
+                <div class="hotels-card__stars-wrapper">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/empty-star.svg" alt="">
+                </div>
+              </div>
+              <div class="hotels-card__content-bottom flex">
+                <span class="hotels-card__content-text">
+                  Lagoona empujar la creatividad
+                </span>
+                <span class="hotels-card__content-text hotels-card__color-gray">
+                  Барселона, Испания
+                </span>
+                <button class="hotels-card__button">
+                  Номера
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hotels-card">
+            <img class="hotels-card__img" src="img/el-retorno.jpg" alt="Lagoona el retorno">
+            <div class="hotels-card__content">
+              <div class="hotels-card__content-top flex">
+                <span class="hotels-card__content-text">
+                  <span class="hotels-card__color-gray">от</span> <span class="hotels-card__font-bold"> 6 320</span> / ночь
+                </span>
+                <div class="hotels-card__stars-wrapper">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/empty-star.svg" alt="">
+                </div>
+              </div>
+              <div class="hotels-card__content-bottom flex">
+                <span class="hotels-card__content-text">
+                  Lagoona el retorno
+                </span>
+                <span class="hotels-card__content-text hotels-card__color-gray">
+                  Барселона, Испания
+                </span>
+                <button class="hotels-card__button">
+                  Номера
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hotels-card">
+            <img class="hotels-card__img" src="img/mentira-piadosa2.jpg" alt="Lagoona mentira piadosa">
+            <div class="hotels-card__content">
+              <div class="hotels-card__content-top flex">
+                <span class="hotels-card__content-text">
+                  <span class="hotels-card__color-gray">от</span> <span class="hotels-card__font-bold"> 6 505</span> / ночь
+                </span>
+                <div class="hotels-card__stars-wrapper">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="Рейтинг отеля 5 из 5">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                </div>
+              </div>
+              <div class="hotels-card__content-bottom flex">
+                <span class="hotels-card__content-text">
+                  Lagoona mentira piadosa
+                </span>
+                <span class="hotels-card__content-text hotels-card__color-gray">
+                  Барселона, Испания
+                </span>
+                <button class="hotels-card__button">
+                  Номера
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hotels-card">
+            <img class="hotels-card__img" src="img/suerte-siguio-siempre.jpg" alt="Lagoona suerte siguió siempre">
+            <div class="hotels-card__content">
+              <div class="hotels-card__content-top flex">
+                <span class="hotels-card__content-text">
+                  <span class="hotels-card__color-gray">от</span> <span class="hotels-card__font-bold"> 6 824</span> / ночь
+                </span>
+                <div class="hotels-card__stars-wrapper">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="Рейтинг отеля 4 из 5">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/star.svg" alt="">
+                  <img class="hotels-card__stars" src="img/empty-star.svg" alt="">
+                </div>
+              </div>
+              <div class="hotels-card__content-bottom flex">
+                <span class="hotels-card__content-text">
+                  Lagoona suerte siguió siempre
+                </span>
+                <span class="hotels-card__content-text hotels-card__color-gray">
+                  Барселона, Испания
+                </span>
+                <button class="hotels-card__button">
+                  Номера
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hotels-card__view-all">
+            <a class="hotels-card__view-all__link" href="#">
+              Посмотреть все варианты
+            </a>
+          </div>
         </div>
       </div>
     </section>
-    <!--Accommodation End-->
+    <!--Hotels End-->
   </main>
   <!--Main End-->
   <!--Footer Start-->
