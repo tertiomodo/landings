@@ -1,11 +1,31 @@
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans/OpenSans-Bold.ttf');
+  font-family: 'OpenSans';
+  src: local('OpenSansRegular'), 
+       url('../fonts/OpenSans/OpenSansRegular.woff2') format('woff2'),
+       url('../fonts/OpenSans/OpenSansRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+  font-family: 'OpenSans';
+  src: local('OpenSansLight'),
+       url('../fonts/OpenSans/OpenSansLight.woff2') format('woff2'),
+       url('../fonts/OpenSans/OpenSansLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSansSemiBold'),
+       url('../fonts/OpenSans/OpenSansSemiBold.woff2') format('woff2'),
+       url('../fonts/OpenSans/OpenSansSemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -28,9 +48,8 @@ img {
 }
 
 body {
-  min-width: 1200px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
+  padding: 30px 0;
+  font-family: 'OpenSans', sans-serif;
 }
 
 ul {
@@ -41,7 +60,7 @@ ul {
 
 button {
   border: 0;
-  padding: 0;
+  padding: 15px 35px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -92,7 +111,9 @@ h4 {
 /* Header Start */
 
 .header {
-  padding: 30px 0;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #C4C4C4;
+  background-color: #ffffff;
 }
 
 .header-container {
@@ -105,6 +126,13 @@ h4 {
 
 .header-nav {
   margin-right: 52px;
+}
+
+.header-link {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #1C1C1C;
 }
 
 .header-item:not(:last-child) {
@@ -121,7 +149,8 @@ h4 {
 /* Hero Start */
 
 .hero {
-  padding: 130px 0;
+  padding: 113px 0 134px 0;
+  background: url('../img/hero-bg.jpg') no-repeat center center / cover;
 }
 
 .hero-button {
@@ -138,10 +167,24 @@ h4 {
 
 .hero-title {
   margin-bottom: 26px;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 130%;
+  color: #1C1C1C;
 }
 
 .hero-descr {
   margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 155%;
+  color: #787878;
+}
+
+.hero-btn-secure-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-button {
