@@ -11,6 +11,17 @@
 
 @font-face {
   font-family: 'Muller';
+  src: url('../fonts/Muller/MullerMedium.woff2');
+  src: local('Muller Bold'), local('MullerMedium'),
+       url('../fonts/Muller/MullerMedium.woff2') format('woff2'),
+       url('../fonts/Muller/MullerMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
   src: url('../fonts/Muller/MullerBold.woff2');
   src: local('Muller Bold'), local('MullerBold'),
        url('../fonts/Muller/MullerBold.woff2') format('woff2'),
@@ -63,12 +74,29 @@ a {
   margin-bottom: 30px;
 }
 
+.header__logo {
+  width: 261px;
+  height: 54px;
+}
+
 .header__logo-link {
   margin-right: 40px;
 }
 
 .header__tel {
   margin-right: auto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
+}
+
+.header__profile {
+  font-size: 16px;
+  line-height: 16px;
+  padding-left: 29px;
+  background: url('../img/header-profile-arrow.svg') no-repeat left center / 21px 12px;
+  color: #CC9933;
 }
 
 .list-style-none {
@@ -79,16 +107,34 @@ a {
 
 .header__bottom {
   justify-content: space-between;
-  padding: 27px 45px;
+  align-items: center;
+  padding: 14px 45px;
   background-color: #FFFFFF;
   border-radius: 15px;
+}
+
+.header-nav__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
 }
 
 .header-nav__item:not(:last-child) {
   margin-right: 45px;
 }
 
-.buttons-header__btn:not(:last-child) {
+.button {
+  padding: 13px 20px;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #CC9933;
+  color: #CC9933;
+  cursor: pointer;
+}
+
+.button:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -96,8 +142,11 @@ a {
 /* Offers Start */
 
 .title {
-  margin: 0;
-  padding-bottom: 20px;
+  margin: 0 0 20px 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
 }
 
 .small-banner {
@@ -108,23 +157,46 @@ a {
   display: flex;
   flex-direction: column;
   min-width: 573px;
-  padding: 40px 45px;
+  padding: 40px 108px 40px 45px;
   margin-right: 24px;
   border-radius: 15px;
-  background-color: #FFFFFF;
 }
 
 .small-banner__item:not(:last-child) {
   margin-bottom: 24px;
 }
 
+.small-banner__maldives {
+  background: url('../img/offers-maldives.jpg') no-repeat center center / cover;
+}
+
+.small-banner__crete {
+  background: url('../img/offers-crete.jpg') no-repeat center center / cover;
+}
+
 .small-banner__title {
   margin: 0;
   padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
 }
 
 .small-banner__price {
   padding-bottom: 47px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.banner__link {
+  max-width: 105px;
+  font-size: 16px;
+  line-height: 16px;
+  background: url('../img/more-arrow.svg') no-repeat right center / 16px 16px;
+  color: #F0BF5F;
 }
 
 .big-banner__item {
@@ -132,7 +204,7 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   min-width: 573px;
-  padding: 40px 45px;
+  padding: 212px 229px 40px 45px;
   border-radius: 15px;
   background-color: #FFFFFF;
 }
@@ -140,10 +212,22 @@ a {
 .big-banner__title {
   margin: 0;
   padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
 }
 
 .big-banner__price {
   padding-bottom: 47px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.big-banner__rooms {
+  background: url('../img/offers-delux-rooms.jpg') no-repeat left bottom / cover;
 }
 
 /* Offers End */
@@ -152,6 +236,9 @@ a {
 .about-us__paragraph {
   margin: 0;
   max-width: 888px;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 /* About Us End */
@@ -181,7 +268,22 @@ a {
   width: 100%;
   min-height: 165px;
   border-radius: 15px 15px 0 0;
-  background-color: rgb(173, 173, 173);
+}
+
+.img-card__service {
+  background: url('../img/services1.jpg') no-repeat center center / cover;
+}
+
+.img-card__rent {
+  background: url('../img/services2.jpg') no-repeat center center / cover;
+}
+
+.img-card__entertainment {
+  background: url('../img/services3.jpg') no-repeat center center / cover;
+}
+
+.img-card__parking {
+  background: url('../img/services4.jpg') no-repeat center center / cover;
 }
 
 .services__card-content {
@@ -189,13 +291,21 @@ a {
 }
 
 .card-content__link {
-  display: inline-block;
-  padding-bottom: 10px;
+  padding-right: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  background: url('../img/more-arrow2.svg') no-repeat right center / 16px 16px;
+  color: #CC9933;
 }
 
 .card-content__paragraph {
+  padding-top: 20px;
   max-width: 402px;
   margin: 0;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 /* Services End */
@@ -229,12 +339,46 @@ a {
   width: 67px;
   height: 66px;
   margin-bottom: 10px;
-  background-color: rgb(173, 173, 173);;
+}
+
+.img-item__bathtub {
+  background: url('../img/bathtub.svg') no-repeat left center / cover;
+}
+
+.img-item__hanger {
+  background: url('../img/hanger.svg') no-repeat left center / cover;
+}
+
+.img-item__heating {
+  background: url('../img/heating.svg') no-repeat left center / cover;
+}
+
+.img-item__hotel-key {
+  background: url('../img/hotel-key.svg') no-repeat left center / cover;
+}
+
+.img-item__parking {
+  background: url('../img/parking.svg') no-repeat left center / cover;
+}
+
+.img-item__reception {
+  background: url('../img/reception.svg') no-repeat left center / cover;
+}
+
+.img-item__security-box {
+  background: url('../img/security-box.svg') no-repeat left center / cover;
+}
+
+.img-item__swimming-pool {
+  background: url('../img/swimming-pool.svg') no-repeat left center / cover;
 }
 
 .card-item__paragraph {
   max-width: 189px;
   margin: 0;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 /* Advantages End */
@@ -275,6 +419,26 @@ a {
   margin-bottom: 16px;
 }
 
+.hotels-card__content-text {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.hotels-card__color-gray {
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.hotels-card__font-bold {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+
 .hotels-card__content-text:nth-child(1) {
   margin-bottom: 16px;
 }
@@ -296,18 +460,18 @@ a {
   align-items: flex-end;
   justify-content: center;
   min-width: 374px;
-  background: url('../img/view-all-bg.jpg') center center / cover;
-  border-radius: 15px;
-}
-
-.hotels-card__view-all__link {
-  display: inline-block;
-  max-width: 374px;
   padding-bottom: 27px;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
+  background: url('../img/view-all-bg.jpg') center center / cover;
+  border-radius: 15px;
   color: #FFFFFF;
+}
+
+.hotels-card__view-all__link {
+  padding-right: 25px;
+  background: url('../img/more-arrow3.svg') no-repeat right center / 20px 20px;
 }
 
 /* Hotels End */
