@@ -326,8 +326,8 @@
           Take control of&nbsp;your paid subscriptions today!
         </p>
         <form class="join-us-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <div class="form-top-wrapper">
-            <div class="form-top-left">
+          <div class="join-us-form-top top-form-wrapper">
+            <div class="top-form-left flex">
               <input class="form-input" type="text" name="name" placeholder="Name" required>
               <input class="form-input" type="email" name="email" placeholder="E-mail" required>
               <input class="form-input" type="tel" name="phone" placeholder="Phone" required>
@@ -345,12 +345,16 @@
               <textarea class="form-text-area" name="comment" placeholder="Comment"></textarea>
             </div>
           </div>
-          <div class="form-bottom">
-            <button>
-              Get started
-            </button>
-            <label>Checkbox</label>
-            <input type="checkbox">
+          <div class="join-us-form-bottom bottom-form flex">
+            <div class="bottom-form-wrapper flex">
+              <button class="button join-us-btn">
+                Get started
+              </button>
+              <label class="join-us-user-agreement agreement-user">
+                <input class="agreement-user-checkbox" type="checkbox" name="user agreement" required>
+                I agree with the <a href="#">user agreement</a>
+              </label>
+            </div>
           </div>
         </form>
       </div>
