@@ -322,6 +322,7 @@ a {
   margin-bottom: 22px;
   padding: 40px 42px 32px 45px;
   background-color: #FFFFFF;
+  border-radius: 15px;
 }
 
 .advantages__card-item:not(:nth-child(4n)) {
@@ -420,14 +421,13 @@ a {
 }
 
 .hotels-card__content-text {
+  max-width: 284px;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
 }
 
 .hotels-card__color-gray {
-  font-size: 16px;
-  line-height: 16px;
   color: #999999;
 }
 
@@ -475,3 +475,66 @@ a {
 }
 
 /* Hotels End */
+/* Want tour Start */
+
+.want-tour__title {
+  margin-left: 0;
+}
+
+.want-tour__container {
+  min-height: 256px;
+  background: #E9E9E9;
+  border-radius: 15px;
+}
+
+.want-tour__content-wrapper {
+  padding: 45px;
+}
+
+.want-tour__form {
+  padding: 31px 28px 32px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.form-tour__item {
+  flex-direction: column;
+  margin-right: 41px;
+}
+
+.form-tour__item:nth-child(5),
+.form-tour__item:nth-child(6) {
+  margin-right: 0;
+}
+
+.form-tour__item:nth-child(5) {
+  margin-right: 51px;
+}
+
+.item-tour__button {
+  padding: 13px 30px;
+}
+
+.item-tour__label {
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+}
+
+.item-tour__select {
+  width: 169px;
+  border: none;
+}
+
+.item-tour__input {
+  width: 121px;
+  border: none;
+}
+
+.tour-input__offset {
+  border-bottom: 1px solid #E9E9E9;
+}
+
+/* Want tour End */

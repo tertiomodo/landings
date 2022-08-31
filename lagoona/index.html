@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <base target="_blank">
   <title>Lagoona</title>
 </head>
 <body>
@@ -484,6 +485,94 @@
       </div>
     </section>
     <!--Hotels End-->
+    <!--Want tour Start-->
+    <section class="want-tour section-offset">
+      <div class="container want-tour__container">
+        <div class="want-tour__content-wrapper">
+          <h2 class="title want-tour__title">
+          Хочу тур
+          </h2>
+          <form class="want-tour__form form-tour" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <ul class="form-tour__list list-style-none flex">
+              <li class="form-tour__item item-tour flex">
+                <label class="item-tour__label">
+                  Город вылета
+                </label>
+                <select class="item-tour__select" name="departure city">
+                  <option selected disabled>
+                    Выберите город
+                  </option>
+                  <option value="Москва">
+                    Москва
+                  </option>
+                  <option value="Санкт-Петербург">
+                    Санкт-Петербург
+                  </option>
+                  <option value="Екатеринбург">
+                    Екатеринбург
+                  </option>
+                  <option value="Мурманск">
+                    Мурманск
+                  </option>
+                  <option value="Сочи">
+                    Сочи
+                  </option>
+                </select>
+              </li>
+              <li class="form-tour__item item-tour flex">
+                <label class="item-tour__label">
+                  Страна
+                </label>
+                <select class="item-tour__select" name="country">
+                  <option selected disabled>
+                    Выберите страну
+                  </option>
+                  <option value="Россия">
+                    Россия
+                  </option>
+                  <option value="Австралия">
+                    Австралия
+                  </option>
+                  <option value="США">
+                    США
+                  </option>
+                  <option value="Канада">
+                    Канада
+                  </option>
+                  <option value="Беларусь">
+                    Беларусь
+                  </option>
+                </select>
+              </li>
+              <li class="form-tour__item item-tour flex">
+                <label class="item-tour__label">
+                  Дата прибытия
+                </label>
+                <input class="item-tour__input" type="date" name="arrival date">
+              </li>
+              <li class="form-tour__item item-tour flex">
+                <label class="item-tour__label">
+                  Ночей
+                </label>
+                <input class="item-tour__input tour-input__offset" type="number" name="nights" min="0" max="20">
+              </li>
+              <li class="form-tour__item item-tour flex">
+                <label class="item-tour__label">
+                  Туристы
+                </label>
+                <input class="item-tour__input tour-input__offset" type="number" name="tourists" min="1" max="20" required>
+              </li>
+              <li class="form-tour__item item-tour flex">
+                <button class="button item-tour__button">
+                  Найти
+                </button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--Want tour End-->
   </main>
   <!--Main End-->
   <!--Footer Start-->
