@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <base target="_blank">
   <title>Lagoona</title>
 </head>
 <body>
@@ -28,22 +27,22 @@
           <nav class="header-nav">
             <ul class="header-nav__list flex list-style-none">
               <li class="header-nav__item">
-                <a class="header-nav__link" href="#">
+                <a class="header-nav__link" href="#about-us">
                   О&nbsp;нас
                 </a>
               </li>
               <li class="header-nav__item">
-                <a class="header-nav__link" href="#">
+                <a class="header-nav__link" href="#services">
                   Услуги
                 </a>
               </li>
               <li class="header-nav__item">
-                <a class="header-nav__link" href="#">
+                <a class="header-nav__link" href="#advantages">
                   Преимущества
                 </a>
               </li>
               <li class="header-nav__item">
-                <a class="header-nav__link" href="#">
+                <a class="header-nav__link" href="#hotels">
                   Размещение
                 </a>
               </li>
@@ -53,7 +52,7 @@
                 </a>
               </li>
               <li class="header-nav__item">
-                <a class="header-nav__link" href="#">
+                <a class="header-nav__link" href="#contacts">
                   Контакты
                 </a>
               </li>
@@ -122,7 +121,7 @@
     <!--About Us Start-->
     <section class="about-us section-offset">
       <div class="container">
-        <h2 class="title">
+        <h2 class="title" id="about-us">
           О&nbsp;нас
         </h2>
         <p class="about-us__paragraph">
@@ -134,7 +133,7 @@
     <!--Services Start-->
     <section class="services section-offset">
       <div class="container">
-        <h2 class="title">
+        <h2 class="title" id="services">
           Услуги
         </h2>
         <ul class="services__card-list flex list-style-none">
@@ -189,7 +188,7 @@
     <!--Advantages Start-->
     <section class="advantages section-offset">
       <div class="container">
-        <h2 class="title">
+        <h2 class="title" id="advantages">
           Преимущества
         </h2>
         <ul class="advantages__card-list flex list-style-none">
@@ -248,7 +247,7 @@
     <!--Hotels Start-->
     <section class="hotels section-offset">
       <div class="container">
-        <h2 class="title">
+        <h2 class="title" id="hotels">
           Размещение
         </h2>
         <div class="hotels-card__wrapper flex">
@@ -492,7 +491,7 @@
           <h2 class="title want-tour__title">
           Хочу тур
           </h2>
-          <form class="want-tour__form form-tour" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <form class="want-tour__form form-tour" action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank">
             <ul class="form-tour__list list-style-none flex">
               <li class="form-tour__item item-tour flex">
                 <label class="item-tour__label">
@@ -576,7 +575,7 @@
     <!--Contacts Start-->
     <section class="contacts section-offset">
       <div class="container">
-        <h2 class="title">
+        <h2 class="title" id="contacts">
           Контакты
         </h2>
         <address class="contacts__address flex">
@@ -648,9 +647,53 @@
   </main>
   <!--Main End-->
   <!--Footer Start-->
-  <footer class="footer section-offset">
+  <footer class="footer">
     <div class="container">
-
+      <div class="footer__background">
+        <div class="footer__content flex">
+          <div class="footer__content-information information-content flex">
+            <div class="information-content__left left-content flex">
+              <span class="left-content__copyright footer__white-text">
+                &copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой сети &laquo;Лагуна Хотелс&raquo;
+              </span>
+              <span class="left-content__descr footer__white-text">
+                Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной офертой
+              </span>
+              <a href="#" class="left-content__agreement-link footer__yellow-text">
+                Пользовательское соглашение
+              </a>
+            </div>
+            <address class="information-content__right right-content flex">
+              <span class="right-content__address right-content__margin footer__white-text">
+                11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+              </span>
+              <a class="right-content__number footer__yellow-text" href="tel:+74995356434">
+                +7&nbsp;499 535-64-34
+              </a>
+              <a class="right-content__number right-content__margin footer__yellow-text" href="tel:+74950050544">
+                +7&nbsp;495 005-05-44
+              </a>
+              <a class="right-content__email footer__yellow-text" href="mailto:lg.oona@mail.ru">
+                lg.oona@mail.ru
+              </a>
+              <a class="right-content__email footer__yellow-text" href="mailto:hotels.ln@mail.ru">
+                hotels.ln@mail.ru
+              </a>
+            </address>
+          </div>
+          <div class="footer__content-links links-content flex">
+            <a href="#">
+              <img class="links-content__logo" src="img/tripadvisor.svg" alt="TripAdvisor">
+            </a>
+            <a href="#">
+              <img class="links-content__logo" src="img/ok.svg" alt="Odnoklassniki">
+            </a>
+            <a href="#">
+              <img class="links-content__logo" src="img/vk.svg" alt="VKontakte">
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
   <!--Footer End-->
