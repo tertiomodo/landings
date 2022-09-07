@@ -105,12 +105,44 @@ h4 {
 }
 
 .button {
+  position: relative;
+  outline: none;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
   color: #FFFFFF;
+  border-radius: 3px;
   background-color: #3172B9;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: inherit;
+  border: 1px solid #71A7E2;
+  outline: none;
+  opacity: 0;
+}
+
+.button:focus::after {
+  opacity: 1;
+}
+
+.button:hover {
+  background-color: #71A7E2;
+}
+
+.button:active {
+  background-color: #0E3B6C;
+}
+
+.button:active::after {
+  opacity: 0;
 }
 
 /* Header Start */
@@ -133,6 +165,14 @@ h4 {
   margin-right: 52px;
 }
 
+.header-item {
+  position: relative;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 52px;
+}
+
 .header-link {
   font-weight: 600;
   font-size: 15px;
@@ -140,14 +180,38 @@ h4 {
   color: #1C1C1C;
 }
 
-.header-item:not(:last-child) {
-  margin-right: 52px;
+.header-link:focus {
+  outline-offset: 3px;
+  outline: 1px solid #71A7E2;
+}
+
+.header-link:hover {
+  color: #71A7E2;
+}
+
+.header-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3172B9;
+  opacity: 0;
+}
+
+.header-link:active {
+  color: #3172B9;
+  outline: none;
+}
+
+.header-link:active::after {
+  opacity: 1;
 }
 
 .header-button {
   min-width: 150px;
   padding: 15px 35px;
-  border-radius: 3px;
 }
 
 /* Header End */
@@ -180,7 +244,6 @@ h4 {
   min-width: 250px;
   padding: 19px 58px;
   margin-bottom: 14px;
-  border-radius: 3px;
 }
 
 .hero-btn-secure-wrapper {
@@ -228,8 +291,21 @@ h4 {
   margin-right: 30px;
 }
 
+.services-item:hover {
+  border-color: #3172B9;
+  background-color: #3172B9;
+}
+
 .services-item-icon {
   margin-bottom: 28px;
+}
+
+.services-item-icon path {
+  fill: #3172B9;
+}
+
+.services-item:hover .services-item-icon path {
+  fill: #FFFFFF;
 }
 
 .services-item-title {
@@ -240,11 +316,19 @@ h4 {
   color: #1C1C1C;
 }
 
+.services-item:hover .services-item-title {
+  color: #FFFFFF;
+}
+
 .services-item-descr {
   text-align: center;
   font-size: 14px;
   line-height: 150%;
   color: #787878;
+}
+
+.services-item:hover .services-item-descr {
+  color: #FFFFFF;
 }
 
 .services {
@@ -283,6 +367,26 @@ h4 {
   border-radius: 5px;
 }
 
+.blog-preview-link {
+  position: relative;
+  width: 100%;
+}
+
+.blog-preview-link:focus {
+  border-color: #71A7E2;
+  background-color: #71A7E2;
+}
+
+.blog-preview-link:hover {
+  border-color: #3172B9;
+  background-color: #3172B9;
+}
+
+.blog-preview-link:active {
+  border-color: #0E3B6C;
+  background-color: #0E3B6C;
+}
+
 .block-preview-text {
   padding: 23px 150px 38px 30px;
 }
@@ -297,7 +401,13 @@ h4 {
   color: #787878;
 }
 
-.block-preview-title{
+.blog-preview-link:focus .blog-preview-time,
+.blog-preview-link:hover .blog-preview-time,
+.blog-preview-link:active .blog-preview-time {
+  color: #ffffff;
+}
+
+.block-preview-title {
   margin-bottom: 15px;
   font-weight: 600;
   font-size: 20px;
@@ -305,11 +415,23 @@ h4 {
   color: #1C1C1C;
 }
 
+.blog-preview-link:focus .block-preview-title,
+.blog-preview-link:hover .block-preview-title,
+.blog-preview-link:active .block-preview-title {
+  color: #ffffff;
+}
+
 .block-preview-descr {
   max-width: 210px;
   font-size: 14px;
   line-height: 150%;
   color: #787878;
+}
+
+.blog-preview-link:focus .block-preview-descr,
+.blog-preview-link:hover .block-preview-descr,
+.blog-preview-link:active .block-preview-descr {
+  color: #ffffff;
 }
 
 .articles {
@@ -390,8 +512,11 @@ h4 {
   font-style: normal;
 }
 
+.contacts-list {
+  justify-content: space-between;
+}
+
 .contacts-item {
-  width: 370px;
   flex-direction: column;
   padding-top: 48px;
   background-repeat: no-repeat;
@@ -411,10 +536,6 @@ h4 {
   background-image: url('../img/email-us.svg');
 }
 
-.contacts-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
 .contacts-item-caption {
   margin-bottom: 30px;
   font-weight: 600;
@@ -432,6 +553,19 @@ h4 {
   font-size: 14px;
   line-height: 180%;
   color: #787878;
+}
+
+.contacts-item-link:focus {
+  outline: 1px solid #71A7E2;
+}
+
+.contacts-item-link:hover {
+  color: #71A7E2;
+}
+
+.contacts-item-link:active {
+  color: #0E3B6C;
+  outline: none;
 }
 
 .contacts {
@@ -486,6 +620,20 @@ h4 {
   margin-bottom: 19px;
 }
 
+.form-input:focus {
+  outline: none;
+  background-color: rgba(113, 167, 226, 0.2);
+  border-color: #71A7E2;
+}
+
+.form-input:hover {
+  border-color: #71A7E2;
+}
+
+.form-input:active {
+  border-color: #0E3B6C;
+}
+
 .form-select {
   min-width: 251px;
   min-height: 60px;
@@ -493,6 +641,20 @@ h4 {
   opacity: 0.6;
   border: 1px solid #DADADA;
   border-radius: 50px;
+}
+
+.form-select:focus {
+  outline: none;
+  background-color: rgba(113, 167, 226, 0.2);
+  border-color: #71A7E2;
+}
+
+.form-select:hover {
+  border-color: #71A7E2;
+}
+
+.form-select:active {
+  border-color: #0E3B6C;
 }
 
 .form-text-area {
@@ -504,6 +666,21 @@ h4 {
   border: 1px solid #DADADA;
   border-radius: 20px;
 }
+
+.form-text-area:focus {
+  outline: none;
+  background-color: rgba(113, 167, 226, 0.2);
+  border-color: #71A7E2;
+}
+
+.form-text-area:hover {
+  border-color: #71A7E2;
+}
+
+.form-text-area:active {
+  border-color: #0E3B6C;
+}
+
 
 .join-us-form-bottom {
   flex-direction: column;
@@ -582,25 +759,52 @@ h4 {
   margin-right: 32px;
 }
 
-.footer-social-link {
-  display: block;
-  width: 28px;
+.footer-social-link,
+.footer-social-link-mail {
+  align-items: center;
+  justify-content: center;
+  width: 24px;
   height: 24px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
-.social-link-twitter {
-  background-image: url('../img/twitter-logo.svg');
+.footer-social-icon path{
+  fill: #000000;
 }
 
-.social-link-linkedin{ 
-  background-image: url('../img/linkedin-logo.svg');
+.footer-social-icon-mail path {
+  stroke: #000000;
 }
 
-.social-link-email {
-  background-image: url('../img/email-logo.svg');  
+.footer-social-link:focus,
+.footer-social-link-mail:focus {
+  outline-offset: 2px;
+  outline: 1px solid #71A7E2;
 }
+
+.footer-social-link:hover svg path {
+  fill: #71A7E2; 
+}
+
+.footer-social-link:active svg path {
+  fill: #3172B9;
+}
+
+.footer-social-link:active {
+  outline: none;
+}
+
+.footer-social-link-mail:hover svg path {
+  stroke: #71A7E2;
+}
+
+.footer-social-link-mail:active svg path {
+  stroke: #3172B9;
+  outline: none;
+}
+
+.footer-social-link-mail:active {
+  outline: none;
+}
+
 
 /* Footer End */
