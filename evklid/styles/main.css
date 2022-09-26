@@ -7,12 +7,11 @@
 @import 'components/header.css';
 @import 'components/hero.css';
 @import 'components/about-us.css';
+@import 'components/how-we-works.css';
+@import 'components/questions.css';
+@import 'components/footer.css';
 
 /* Other */
-* {
-  box-sizing: border-box;
-}
-
 body {
   min-width: 320px;
   font-family: 'Montserrat';
@@ -33,7 +32,6 @@ body {
   font-weight: 400;
   font-size: 48px;
   line-height: 59px;
-  color: var(--black);
 }
 
 .button {
@@ -49,5 +47,4 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  color: var(--black);
 }

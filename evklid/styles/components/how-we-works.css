@@ -1,0 +1,61 @@
+.how {
+  margin-bottom: 100px;
+}
+
+.how__title {
+  color: var(--black);
+}
+
+.how__step-list {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.how__step-item:not(:last-child) {
+  margin-right: 85px;
+}
+
+.how__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.how__content {
+  width: 100%;
+  max-width: 758px;
+}
+
+.how__content-title {
+  margin-bottom: 8px;
+
+}
+
+.how__content-descr {
+  margin-bottom: 18px;
+  color: var(--black);
+}
+
+.how__content-btn-more {
+  margin-right: 32px;
+  padding: 20px 38px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.how__content-btn-contract {
+  padding: 20px 38px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black);
+  border: 1px solid var(--black);
+  border-radius: 16px;
+}
+
+.how__content-img {
+  width: 100%;
+  max-width: 870px;
+  max-height: 460px;
+  background: url('../../assets/img/how-we-works-bg.jpg') no-repeat center center / cover;
+  border-radius: 32px;
+}

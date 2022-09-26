@@ -1,0 +1,148 @@
+.footer {
+  width: 100%;
+  min-height: 594px;
+  padding: 50px 0;
+  background-color: var(--black);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray-light);
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  width: 224px;
+  height: 72px;
+  margin-bottom: 20px;
+}
+
+.footer__nav {
+  margin-bottom: 90px;
+}
+
+.footer__nav-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.footer__social-link {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.footer__social-link-ok {
+  margin-right: 25px;
+}
+
+.footer__center {
+  width: 100%;
+  max-width: 570px;
+}
+
+.footer__center-title {
+  margin-bottom: 25px;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__inpit {
+  width: 100%;
+  min-height: 60px;
+  padding: 14px 24px;
+  margin-bottom: 25px;
+  color: var(--gray-light);
+  background: var(--gray-dark);
+  outline: none;
+  border: none;
+  border-radius: 16px;
+}
+
+.footer__inpit:nth-child(2) {
+  margin-bottom: 39px;
+}
+
+.footer__inpit::placeholder {
+  color: var(--gray-light);
+}
+
+.footer__textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 14px 24px;
+  margin-bottom: 18px;
+  color: var(--gray-light);
+  background: var(--gray-dark);
+  resize: none;
+  outline: none;
+  border: none;
+  border-radius: 16px;
+}
+
+.footer__textarea::placeholder {
+  color: var(--gray-light);
+}
+
+.footer__send-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__button {
+  padding: 19px 52px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__checkbox-label {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.footer__checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 8.5px;
+  left: 22px;
+  height: 14px;
+  width: 14px;
+  border: 1px solid var(--gray-light);
+  border-radius: 2px;
+}
+
+.footer__checkbox:checked ~ .checkmark {
+  background: url('../../assets/svg/footer-check-mark.svg') no-repeat center center / 10px;
+}
+
+.footer__right {
+  display: flex;
+}
+
+.footer__right-descr {
+  align-self: center;
+  max-width: 363px;
+}

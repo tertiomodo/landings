@@ -1,9 +1,15 @@
+.about {
+  margin-bottom: 100px;
+}
+
 .about__title {
   margin-bottom: 20px;
+  color: var(--black);
 }
 
 .about__descr {
   max-width: 1235px;
+  color: var(--black);
 }
 
 .about__more-container {
@@ -89,14 +95,14 @@
   color: var(--black);
 }
 
+.about__right-descr {
+  color: var(--black);
+}
+
 .about__right-img-bottom {
   flex-shrink: 0;
   width: 190px;
   height: 165px;
   margin-right: 50px;
   background: url('../../assets/svg/about-us-bottom.svg') no-repeat center center / contain;
-}
-
-.about {
-  margin-bottom: 100px;
 }
