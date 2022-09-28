@@ -1,5 +1,5 @@
 .how {
-  margin-bottom: 100px;
+  margin-bottom: 104px;
   color: var(--black);
 }
 
@@ -9,7 +9,7 @@
 }
 
 .how__step-item:not(:last-child) {
-  margin-right: 85px;
+  margin-right: 85.8px;
 }
 
 .how__step-link {
@@ -45,16 +45,22 @@
 
 .how__content-title {
   margin-bottom: 8px;
-
-}
-
-.how__content-descr {
-  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
   color: var(--black);
 }
 
+.how__content-descr {
+  color: var(--black);
+}
+
+.how__content-descr:nth-child(3) {
+  margin-bottom: 16px;
+}
+
 .how__content-btn-more {
-  margin-right: 32px;
+  margin-right: 27px;
   padding: 20px 38px;
   font-size: 16px;
   line-height: 20px;
@@ -105,6 +111,7 @@
   width: 100%;
   max-width: 870px;
   max-height: 460px;
+  margin-top: 9px;
   background: url('../../assets/img/how-we-works-bg.jpg') no-repeat center center / cover;
   border-radius: 32px;
 }
