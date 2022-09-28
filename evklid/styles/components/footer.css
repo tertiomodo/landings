@@ -14,6 +14,7 @@
 .footer__left {
   display: flex;
   flex-direction: column;
+  margin-right: 115px;
 }
 
 .footer__logo {
@@ -78,7 +79,7 @@
 }
 
 .footer__social-link-ok {
-  margin-right: 25px;
+  margin-right: 21px;
 }
 
 .footer__center {
@@ -108,10 +109,6 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-.footer__inpit:nth-child(2) {
-  margin-bottom: 39px;
-}
-
 .footer__inpit::placeholder {
   color: var(--gray-light);
 }
@@ -131,8 +128,8 @@
 .footer__textarea {
   width: 100%;
   min-height: 150px;
-  padding: 14px 24px;
-  margin-bottom: 18px;
+  padding: 22px 24px;
+  margin-bottom: 32px;
   color: var(--white);
   background: var(--gray-dark);
   resize: none;
@@ -186,7 +183,8 @@
 .footer__checkbox-label {
   position: relative;
   display: block;
-  padding-left: 40px;
+  margin-right: 3px;
+  padding-left: 39px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
