@@ -3,6 +3,10 @@
   color: var(--black);
 }
 
+.how__title {
+  margin-bottom: 50px;
+}
+
 .how__step-list {
   display: flex;
   margin-bottom: 45px;
@@ -110,7 +114,6 @@
 .how__content-img {
   width: 100%;
   max-width: 870px;
-  max-height: 460px;
   margin-top: 9px;
   background: url('../../assets/img/how-we-works-bg.jpg') no-repeat center center / cover;
   border-radius: 32px;
