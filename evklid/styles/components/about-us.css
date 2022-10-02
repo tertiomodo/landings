@@ -9,6 +9,7 @@
 
 .about__descr {
   max-width: 1235px;
+  margin-bottom: 50px;
   color: var(--black);
 }
 
@@ -75,17 +76,22 @@
 .about__right {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .about__right-box {
   display: flex;
   width: 100%;
   max-width: 870px;
-  padding: 63px 114px 65px 59px;
+  min-height: 295px;
+  padding: 63px 0 65px 60px;
   background-color: var(--white);
   border: 1px solid var(--gray-light);
   border-radius: 32px;
+}
+
+.about__right-box:first-child {
+  margin-bottom: 32px;
 }
 
 .about__right-img-top {
@@ -111,6 +117,7 @@
 
 .about__right-descr {
   color: var(--black);
+  max-width: 450px;
 }
 
 .about__right-img-bottom {
