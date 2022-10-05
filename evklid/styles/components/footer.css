@@ -96,7 +96,7 @@
   flex-direction: column;
 }
 
-.footer__inpit {
+.footer__input {
   width: 100%;
   min-height: 60px;
   padding: 14px 24px;
@@ -109,19 +109,19 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-.footer__inpit::placeholder {
+.footer__input::placeholder {
   color: var(--gray-light);
 }
 
-.footer__inpit:focus {
+.footer__input:focus {
   background-color: var(--gray-silver);
 }
 
-.footer__inpit:hover {
+.footer__input:hover {
   background-color: var(--gray-silver);
 }
 
-.footer__inpit:active {
+.footer__input:active {
   background-color: var(--gray-silver);
 }
 
