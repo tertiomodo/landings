@@ -367,6 +367,7 @@ h4 {
 .articles__list {
   flex-wrap: wrap;
   margin-bottom: -26px;
+  padding-bottom: 10px;
 }
 
 .articles__item {
@@ -460,6 +461,15 @@ h4 {
 
 .articles {
   border-bottom: 1px solid #DADADA;
+}
+
+.articles-center {
+  display: none;
+  text-align: center;
+}
+
+.articles-more {
+  padding: 10px 20px;
 }
 
 /* Articles End */

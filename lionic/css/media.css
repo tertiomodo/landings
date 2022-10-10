@@ -296,6 +296,14 @@
     margin-right: 0;
   }
 
+  .articles__item:nth-child(n + 3) {
+    display: none;
+  }
+
+  .articles__item.articles__item--visible {
+    display: block;
+  }
+
   .blog {
     min-height: 191px;
   }
@@ -318,6 +326,14 @@
 
   .blog__title {
     margin-bottom: 2px;
+  }
+
+  .articles-center {
+    display: block;
+  }
+
+  .articles-center--hidden {
+    display: none;
   }
 
   .clients__title {

@@ -21,3 +21,13 @@ menuLinks.forEach(function(element) {
 
   });
 });
+
+const btnMore = document.querySelector('.articles-more');
+const articlesItems = document.querySelectorAll('.articles__item');
+
+btnMore.addEventListener('click', () => {
+  articlesItems.forEach(elements => {
+    elements.classList.add('articles__item--visible');
+    btnMore.closest('.articles-center').classList.add('articles-center--hidden');
+  });
+});
