@@ -17,10 +17,6 @@
     margin-right: 20px;
   }
 
-  .how__content {
-    margin-right: 20px;
-  }
-
   .footer__center {
     margin-right: 50px;
   }
@@ -87,7 +83,8 @@
     margin-bottom: 36px;
   }
 
-  .hero__content {
+  .hero__container {
+    min-height: 668px;
     padding: 160px 77px;
   }
 
@@ -98,9 +95,12 @@
   }
 
   .hero__descr {
-    margin-bottom: 60px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .hero__button {
+    margin-top: 60px;
   }
 
   .about {
@@ -136,7 +136,7 @@
     margin-bottom: 50px;
   }
 
-  .how__content {
+  .how__content-wrapper {
     margin-right: 50px;
   }
 
@@ -219,6 +219,10 @@
     bottom: -8px;
     left: -8px;
   }
+
+  .hero__container {
+    min-height: 668px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -226,17 +230,18 @@
     padding: 11px 0 10px;
   }
 
+  .hero__content {
+    max-height: 348px;
+  }
+
   .hero__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     min-height: 662px;
-    border-radius: 24px;
-  }
-
-  .hero__content {
     padding: 160px 40px;
+    border-radius: 24px;
   }
 
   .hero__title {
@@ -293,11 +298,11 @@
     justify-content: space-between;
   }
 
-  .how__content-wrapper {
+  .how__content-item {
     flex-direction: column-reverse;
   }
 
-  .how__content {
+  .how__content-wrapper {
     margin-right: 0;
   }
 
@@ -361,11 +366,8 @@
     min-height: 308px;
     align-items: center;
     text-align: center;
-    border-radius: 16px;
-  }
-
-  .hero__content {
     padding: 60px 22px;
+    border-radius: 16px;
   }
 
   .hero__title {
@@ -375,15 +377,24 @@
   }
 
   .hero__descr {
-    margin-bottom: 33px;
     font-size: 12px;
     line-height: 15px;
   }
 
   .hero__button {
+    margin-top: 33px;
     padding: 13px 28px;
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 11.5px;
+  }
+
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px));
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px));
   }
 
   .title {
@@ -484,7 +495,7 @@
     margin-right: 0;
   }
 
-  .how__step-link {
+  .how__step-button {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;

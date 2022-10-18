@@ -16,35 +16,49 @@
   margin-right: 85.8px;
 }
 
-.how__step-link {
+.how__step-button {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   transition: color 0.3s ease-in-out;
 }
 
-.how__step-link:focus {
+.how__step-button:focus {
   outline-offset: 5px;
   outline: 2px solid var(--orange);
 }
 
-.how__step-link:hover {
+.how__step-button:hover {
   color: var(--orange);
 }
 
-.how__step-link:active {
+/* Tab */
+.how__step-button--active {
   outline: none;
   color: var(--orange-active);
 }
 
-.how__content-wrapper {
+.how__content-list {
   display: flex;
   justify-content: space-between;
 }
 
-.how__content {
+/* Tab */
+.how__content-item {
+  display: none;
+}
+
+/* Tab */
+.how__content-item--active {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.how__content-wrapper {
   width: 100%;
   max-width: 758px;
+  margin-right: 20px;
 }
 
 .how__content-title {
@@ -56,6 +70,8 @@
 }
 
 .how__content-descr {
+  width: 100%;
+  max-width: 758px;
   margin-bottom: 47px;
   color: var(--black);
 }
@@ -111,7 +127,25 @@
 .how__content-img {
   width: 100%;
   max-width: 870px;
+  min-height: 460px;
   margin-top: 9px;
-  background: url('../../assets/img/how-we-works-bg.jpg') no-repeat center center / cover;
   border-radius: 32px;
 }
+
+.how__content-img1 {
+  background: url('../../assets/img/how-we-works-bg1.jpg') no-repeat center center / cover;
+}
+
+.how__content-img2 {
+  background: url('../../assets/img/how-we-works-bg2.jpg') no-repeat center center / cover;
+}
+
+.how__content-img3 {
+  background: url('../../assets/img/how-we-works-bg3.jpg') no-repeat center center / cover;
+}
+
+.how__content-img4 {
+  background: url('../../assets/img/how-we-works-bg4.jpg') no-repeat center center / cover;
+}
+
+
