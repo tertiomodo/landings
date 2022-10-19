@@ -145,16 +145,20 @@
   }
 
   .questions {
-    margin-bottom: 80px;
+    margin-bottom: 94px;
   }
 
   .questions__title {
     margin-bottom: 31px;
   }
 
-  .questions__accordion-descr {
+  .questions__accordion-title {
     max-width: 756px;
     font-size: 20px;
+  }
+
+  .questions__accordion-descr {
+    max-width: 800px;
   }
 
   .footer {
@@ -315,7 +319,7 @@
   }
 
   .questions {
-    margin-bottom: 111px;
+    margin-bottom: 125px;
   }
 
   .footer__nav {
@@ -533,15 +537,15 @@
   }
 
   .questions {
-    margin-bottom: 84px;
+    margin-bottom: 108px;
   }
 
   .questions__title {
     margin-bottom: 16px;
   }
 
-  .questions__accordion-descr {
-    font-weight: 500;
+  .questions__accordion-title {
+    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
   }
@@ -549,6 +553,11 @@
   .questions__accordion-icon svg {
     width: 30px;
     height: 30px;
+  }
+
+  .questions__accordion-descr {
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .footer {

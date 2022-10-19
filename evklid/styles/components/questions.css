@@ -12,44 +12,71 @@
   flex-direction: column;
 }
 
-.questions__accordion-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.questions__accordion-item {
   padding: 30px 0;
   outline: none;
   border-top: 1px solid var(--gray-light);
   transition: border 0.3s ease-in-out;
 }
 
-.questions__accordion-link:focus,
-.questions__accordion-link:focus + .questions__accordion-link {
+.questions__accordion-item:focus,
+.questions__accordion-item:focus + .questions__accordion-item {
   border-top: 1px solid var(--orange);
 }
 
-.questions__accordion-link:last-child:focus {
+.questions__accordion-item:last-child:focus {
   border-bottom: 1px solid var(--orange);
 }
 
-.questions__accordion-link:hover,
-.questions__accordion-link:hover + .questions__accordion-link {
+.questions__accordion-item:hover,
+.questions__accordion-item:hover + .questions__accordion-item {
   border-top: 1px solid var(--orange);
 }
 
-.questions__accordion-link:last-child:hover {
+.questions__accordion-item:last-child:hover {
   border-bottom: 1px solid var(--orange);
 }
 
-.questions__accordion-link:active,
-.questions__accordion-link:active + .questions__accordion-link {
+.questions__accordion-item:active,
+.questions__accordion-item:active + .questions__accordion-item {
   border-top: 1px solid var(--gray-light);
 }
 
-.questions__accordion-link:last-child:active {
+.questions__accordion-item:last-child:active {
   border-bottom: 1px solid var(--gray-light);
 }
 
-.questions__accordion-descr {
+.ui-accordion-header-icon {
+  display: none;
+}
+
+.ui-icon {
+  background-image: none;
+}
+
+.ui-accordion .ui-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-state-default {
+  border: none;
+  background: none;
+}
+
+.ui-accordion .ui-accordion-content {
+  padding: 0;
+}
+
+.ui-widget-content {
+  border: none;
+  background: none;
+}
+
+.questions__accordion-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -57,15 +84,25 @@
   transition: color 0.3s ease-in-out;
 }
 
-.questions__accordion-link:focus .questions__accordion-descr {
+.questions__accordion-descr {
+  max-width: 1003px;
+  line-height: 32px;
+  color: var(--black);
+}
+
+.questions__accordion-descr:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.questions__accordion-item:focus .questions__accordion-title {
   color: var(--orange);
 }
 
-.questions__accordion-link:hover .questions__accordion-descr {
+.questions__accordion-item:hover .questions__accordion-title {
   color: var(--orange);
 }
 
-.questions__accordion-link:active .questions__accordion-descr {
+.questions__accordion-item:active .questions__accordion-title {
   color: var(--black);
 }
 
@@ -86,34 +123,34 @@
   transition: fill 0.3s ease-in-out;
 }
 
-.questions__accordion-link:focus .questions__accordion-icon ellipse {
+.questions__accordion-item:focus .questions__accordion-icon ellipse {
   fill: var(--orange);
 }
 
-.questions__accordion-link:focus .questions__accordion-icon path {
+.questions__accordion-item:focus .questions__accordion-icon path {
   fill: var(--white);
 }
 
-.questions__accordion-link:hover .questions__accordion-icon ellipse {
+.questions__accordion-item:hover .questions__accordion-icon ellipse {
   fill: var(--orange);
 }
 
-.questions__accordion-link:hover .questions__accordion-icon path {
+.questions__accordion-item:hover .questions__accordion-icon path {
   fill: var(--white);
 }
 
-.questions__accordion-link:active .questions__accordion-icon ellipse {
+.ui-accordion-header-active .questions__accordion-icon ellipse {
   fill: var(--gray-light);
 }
 
-.questions__accordion-link:active .questions__accordion-icon path {
+.ui-accordion-header-active .questions__accordion-icon path {
   fill: var(--black);
 }
 
-.questions__accordion-link:active .questions__accordion-icon {
+.ui-accordion-header-active .questions__accordion-icon {
   transform: rotate(45deg);
 }
 
-.questions__accordion-link:last-child {
+.questions__accordion-item:last-child {
   border-bottom: 1px solid var(--gray-light);
 }

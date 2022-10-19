@@ -36,3 +36,11 @@ tabsButton.forEach(element => {
 });
 
 // Tab end
+// Accordion start
+
+$('.accordion').accordion({
+  active: false,
+  collapsible: true,
+});
+
+// Accordion end
