@@ -44,3 +44,38 @@ $('.accordion').accordion({
 });
 
 // Accordion end
+// Burger start
+
+let burger = document.querySelector('.burger');
+let nav = document.querySelector('.header__nav-list');
+let cross = document.querySelector('.header__cross');
+let navItem = nav.querySelectorAll('.header__nav-item');
+let transparent = document.querySelector('.header__transparent');
+
+burger.addEventListener('click', () => {
+  nav.classList.toggle('header__nav-list--active');
+  transparent.classList.toggle('header__transparent--active');
+  document.body.classList.toggle('stop-scroll');
+});
+
+cross.addEventListener('click', () => {
+  nav.classList.remove('header__nav-list--active');
+  transparent.classList.remove('header__transparent--active');
+  document.body.classList.remove('stop-scroll');
+});
+
+navItem.forEach(element => {
+  element.addEventListener('click', () => {
+    nav.classList.remove('header__nav-list--active');
+    transparent.classList.remove('header__transparent--active');
+    document.body.classList.remove('stop-scroll');
+  });
+});
+
+transparent.addEventListener('click', () => {
+  nav.classList.remove('header__nav-list--active');
+  transparent.classList.remove('header__transparent--active');
+  document.body.classList.remove('stop-scroll');
+});
+
+// Burger end
