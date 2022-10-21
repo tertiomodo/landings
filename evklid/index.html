@@ -23,32 +23,37 @@
         <img class="header__logo" src="assets/svg/evklid-logo.svg" alt="Evklid logo">
         <nav class="header__nav">
           <ul class="header__nav-list">
+            <div class="header__cross">
+              <span class="header__cross-line"></span>
+              <span class="header__cross-line"></span>
+            </div>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">
+              <a class="header__nav-link" href="#about">
                 О нас
               </a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">
+              <a class="header__nav-link" href="#hero">
                 Проекты
               </a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">
+              <a class="header__nav-link" href="#how">
                 Этапы
               </a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">
+              <a class="header__nav-link" href="#questions">
                 Отзывы
               </a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">
+              <a class="header__nav-link" href="#contacts">
                 Контакты
               </a>
             </li>
           </ul>
+          <div class="header__transparent"></div>
           <button class="header__nav-button">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="none"/>
@@ -65,7 +70,7 @@
     <!--Hero Start-->
     <section class="hero">
       <div class="container">
-        <div class="hero__container">
+        <div class="hero__container" id="hero">
           <div class="hero__content">
             <h1 class="hero__title">
               Проектные решения любой сложности
@@ -100,7 +105,7 @@
     <!--About Us Start-->
     <section class="about">
       <div class="container">
-        <h2 class="about__title title">
+        <h2 class="about__title title" id="about">
           О нас
         </h2>
         <p class="about__descr description">
@@ -149,7 +154,7 @@
     <!--How We Works Start-->
     <section class="how">
       <div class="container">
-        <h2 class="how__title title">
+        <h2 class="how__title title" id="how">
           Как мы&nbsp;работаем
         </h2>
         <ul class="how__step-list">
@@ -258,7 +263,7 @@
     <!--Questions Start-->
     <section class="questions">
       <div class="container">
-        <h2 class="questions__title title">
+        <h2 class="questions__title title" id="questions">
           Часто задаваемые вопросы
         </h2>
         <ul class="accordion questions__accordion-list">
@@ -376,7 +381,7 @@
   <!--Footer Start-->
   <footer class="footer">
     <div class="container">
-      <div class="footer__container">
+      <div class="footer__container" id="contacts">
         <div class="footer__left">
           <img class="footer__logo" src="assets/svg/evklid-logo-footer.svg" alt="Evklid logo">
           <ul class="footer__nav">
