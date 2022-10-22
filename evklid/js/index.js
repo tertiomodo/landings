@@ -79,3 +79,48 @@ transparent.addEventListener('click', () => {
 });
 
 // Burger end
+// Search start
+
+let header__button = document.querySelector('.header__button');
+let form = document.querySelector('.header__form');
+let form__button = document.querySelector('.header__form-button');
+let form__input = document.querySelector('.header__form-search');
+let transparent__search = document.querySelector('.header__transparent');
+let closed = document.querySelector('.header__form-closed');
+
+header__button.addEventListener('click', () => {
+  header__button.classList.add('header__button--active');
+  form.classList.add('header__form--active');
+  form__button.classList.add('header__form-button--active');
+  form__input.classList.add('header__form-search--active');
+  closed.classList.add('header__form-closed--active');
+  transparent__search.classList.add('header__transparent--active');
+});
+
+closed.addEventListener('click', () => {
+  header__button.classList.remove('header__button--active');
+  form.classList.remove('header__form--active');
+  form__button.classList.remove('header__form-button--active');
+  form__input.classList.remove('header__form-search--active');
+  closed.classList.remove('header__form-closed--active');
+  transparent__search.classList.remove('header__transparent--active');
+  form.reset();
+});
+
+transparent__search.addEventListener('click', () => {
+  header__button.classList.remove('header__button--active');
+  form.classList.remove('header__form--active');
+  form__button.classList.remove('header__form-button--active');
+  form__input.classList.remove('header__form-search--active');
+  closed.classList.remove('header__form-closed--active');
+  transparent__search.classList.remove('header__transparent--active');
+  form.reset();
+});
+
+form__button.addEventListener('click', () => {
+  setTimeout(() => {
+    form.reset();
+  }, 1000);
+});
+
+// Search end
