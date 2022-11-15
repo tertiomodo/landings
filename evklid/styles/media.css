@@ -55,7 +55,7 @@
   }
 
   .footer__checkbox-label {
-    padding-left: 17px;
+    margin: 10px 2px 0 0;
   }
 
   .checkmark {
@@ -73,9 +73,14 @@
     margin-bottom: 40px;
   }
 
-  .header__logo {
+  .header__logo-link {
     width: 150px;
     height: 48px;
+  }
+
+  .header__logo {
+    width: 100%;
+    height: 100%;
     margin-right: 30px;
   }
 
@@ -145,7 +150,7 @@
   }
 
   .questions {
-    margin-bottom: 94px;
+    margin-bottom: 72px;
   }
 
   .questions__title {
@@ -153,7 +158,6 @@
   }
 
   .questions__accordion-title {
-    max-width: 756px;
     font-size: 20px;
   }
 
@@ -178,14 +182,24 @@
     margin-right: 0;
   }
 
+  .footer__checkbox-label {
+    margin: 0;
+  }
+
   .footer__button {
     padding: 19px 38px;
   }
 }
 
 @media (max-width: 1024px) {
+  .header__logo-link {
+    display: block;
+    margin-right: 0;
+  }
+
   .header__nav {
-    max-width: 24px;
+    width: fit-content;
+    max-width: none;
   }
 
   .header__nav-list {
@@ -227,6 +241,7 @@
     position: relative;
     width: 30px;
     height: 23px;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -247,7 +262,7 @@
     width: 100%;
     height: 3px;
     background-color: var(--black);
-    transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out, transform 0.3s ease-in-out;
   }
 
   .burger:focus {
@@ -255,34 +270,35 @@
     outline: 2px solid var(--orange);
   }
 
-  .burger:hover .burger__line:nth-child(2),
-  .burger:active .burger__line:nth-child(2) {
+  .burger:hover .burger__line:nth-child(2) {
     width: 70%;
   }
 
-  .burger:hover .burger__line:last-child,
-  .burger:active .burger__line:last-child {
+  .burger:hover .burger__line:last-child {
     width: 30%;
   }
 
-  .burger:hover .burger__line,
-  .burger:active .burger__line {
+  .burger:hover .burger__line {
     background-color: var(--orange-active);
   }
 
   .header__cross {
+    display: block;
+  }
+
+  .header__cross-btn {
     position: absolute;
     top: 38px;
     left: 50px;
-    width: 23px;
-    height: 23px;
+    width: 30px;
+    height: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
   }
 
-  .header__cross::before {
+  .header__cross-btn::before {
     content: '';
     position: absolute;
     top: -5px;
@@ -295,26 +311,26 @@
     width: 100%;
     height: 3px;
     background-color: var(--black);
-    transition: background-color 0.1s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
   }
 
   .header__cross-line:first-child {
     align-items: center;
-    transform: translate(0, 10px) rotate(45deg);
+    transform: translate(0, 14px) rotate(45deg);
   }
 
   .header__cross-line:last-child {
     align-items: center;
-    transform: translate(0, -10px) rotate(-45deg);
+    transform: translate(0, -13px) rotate(-45deg);
   }
 
-  .header__cross:focus {
+  .header__cross-btn:focus {
     outline-offset: 5px;
     outline: 2px solid var(--orange);
   }
 
-  .header__cross:hover .header__cross-line,
-  .header__cross:active .header__cross-line {
+  .header__cross-btn:hover .header__cross-line,
+  .header__cross-btn:active .header__cross-line {
     background-color: var(--orange-active);
   }
 
@@ -334,6 +350,10 @@
   .about__left-button:hover {
     color: var(--white);
   }
+
+  .ui-accordion .ui-accordion-header {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -344,10 +364,6 @@
   .header__form {
     top: 5px;
     right: 7px;
-  }
-
-  .hero__content {
-    max-height: 348px;
   }
 
   .hero__container {
@@ -431,7 +447,7 @@
   }
 
   .questions {
-    margin-bottom: 125px;
+    margin-bottom: 68px;
   }
 
   .footer__nav {
@@ -439,7 +455,7 @@
   }
 
   .footer {
-    padding: 51px 0 45px;
+    padding: 51px 0 46px;
   }
 
   .footer__container {
@@ -454,11 +470,23 @@
   .footer__logo {
     margin-bottom: 16px;
   }
+
+  .footer__send-wrapper {
+    flex-wrap: nowrap;
+  }
+  .footer__checkbox-descr {
+    margin-left: 5px;
+  }
 }
 
 @media (max-width: 577px) {
   .container {
     padding: 0 15px;
+  }
+
+  .header__logo-link {
+    width: 112px;
+    height: 47px;
   }
 
   .header__logo {
@@ -475,7 +503,7 @@
     padding: 78px 15px;
   }
 
-  .header__cross {
+  .header__cross-btn {
     top: 23px;
     left: 15px;
   }
@@ -684,22 +712,23 @@
   }
 
   .questions {
-    margin-bottom: 108px;
+    margin-bottom: 59px;
   }
 
   .questions__title {
     margin-bottom: 16px;
   }
 
-  .questions__accordion-title {
-    font-weight: 400;
+  .ui-accordion .ui-accordion-header {
+    padding: 30px 0;
+    font-weight: 500;
     font-size: 14px;
     line-height: 24px;
   }
-  .questions__accordion-icon,
-  .questions__accordion-icon svg {
+  .ui-icon {
     width: 30px;
     height: 30px;
+    background-size: 30px 30px;
   }
 
   .questions__accordion-descr {
@@ -727,7 +756,7 @@
   }
 
   .footer__textarea {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     padding: 14px 19px;
     font-size: 14px;
     line-height: 32px;
@@ -740,16 +769,20 @@
   }
 
   .footer__button {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     padding: 12px 28px;
     font-size: 12px;
     line-height: 15px;
   }
 
+  .footer__checkbox-descr {
+    margin-left: 0;
+  }
+
   .footer__left {
     position: relative;
     align-items: center;
-    padding-top: 17px;
+    padding-top: 21px;
   }
 
   .footer__left::before {
