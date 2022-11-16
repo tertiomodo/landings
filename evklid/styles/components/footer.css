@@ -143,6 +143,10 @@
   color: var(--gray-light);
 }
 
+::-moz-placeholder, :-moz-placeholder {
+  opacity: 1;
+}
+
 .footer__textarea:focus {
   background-color: var(--gray-silver);
 }
