@@ -52,11 +52,16 @@ a {
   color: inherit;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* -------------------------- */
 
 .container {
-  max-width: 1170px;
+  max-width: 1210px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .section-offset {
@@ -71,6 +76,7 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 :root {
@@ -82,6 +88,7 @@ a {
 /* Header start */
 
 .header__top {
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
@@ -102,6 +109,11 @@ a {
 .header__logo-link:focus {
   outline-offset: 3px;
   outline: 1px solid var(--yellow-color-hover-focus);
+}
+
+.header__information {
+  width: 100%;
+  max-width: 909px
 }
 
 .header__tel {
@@ -171,6 +183,18 @@ a {
   border-radius: 15px;
 }
 
+.header-nav {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  max-width: 639px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .nav__link {
   font-size: 16px;
   line-height: 16px;
@@ -179,8 +203,8 @@ a {
   transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 45px;
+.nav__item {
+  margin-right: 25px;
 }
 
 .nav__link:focus {
@@ -211,8 +235,10 @@ a {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.button:not(:last-child) {
-  margin-right: 40px;
+.header__buttons-wrapper {
+  width: 100%;
+  max-width: 326px;
+  justify-content: space-between;
 }
 
 .button:focus {
@@ -240,10 +266,6 @@ a {
   font-size: 40px;
   line-height: 40px;
   color: #333333;
-}
-
-.offers__content {
-  flex-wrap: wrap;
 }
 
 .offers__banners-wrapper {
@@ -335,6 +357,7 @@ a {
 
 .offers__big-banner {
   position: relative;
+  width: 100%;
   max-width: 573px;
   min-height: 540px;
   border-radius: 15px;
@@ -346,12 +369,13 @@ a {
   justify-content: flex-end;
   width: 100%;
   height: 100%;
-  padding: 0 229px 40px 45px;
+  padding: 0 0 40px 45px;
   border-radius: 15px;
   background: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
 }
 
 .offers__big-banner-title {
+  max-width: 295px;
   margin: 0;
   padding-bottom: 15px;
   font-weight: 700;
@@ -532,7 +556,7 @@ a {
 
 .advantages__item {
   flex-direction: column;
-  min-width: 276px;
+  max-width: 276px;
   margin-top: 22px;
   padding: 40px 42px 32px 45px;
   background-color: #FFFFFF;
@@ -604,7 +628,7 @@ a {
 }
 
 .hotels-card__wrapper {
-  min-width: 374px;
+  max-width: 374px;
   min-height: 440px;
   margin-top: 24px;
 }
@@ -617,6 +641,18 @@ a {
 .hotels-card__wrapper:nth-child(2),
 .hotels-card__wrapper:nth-child(3) {
   margin-top: 0;
+}
+
+.hotels-card__wrapper:nth-child(n + 6) {
+  display: none;
+}
+
+.hotels-card__wrapper.hotels-card__wrapper--visible {
+  display: block;
+}
+
+.hotels-card__all--hidden {
+  display: none;
 }
 
 .hotels-card__content {
@@ -696,6 +732,7 @@ a {
   line-height: 200%;
   color: #FFFFFF;
   outline: none;
+  cursor: pointer;
   transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
@@ -753,7 +790,7 @@ a {
 }
 
 .tour__content-wrapper {
-  padding: 45px;
+  padding: 44px;
 }
 
 .tour__form {
@@ -1048,3 +1085,435 @@ a {
 }
 
 /* Footer End */
+/* Media start */
+
+@media (max-width: 1209px) {
+  .services__card-item {
+    width: 100%;
+    max-width: 671px;
+    min-height: 425px;
+  }
+
+  .services__card-list {
+    justify-content: center;
+  }
+
+  .services__card-item:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+
+  .services__card-item:nth-child(1),
+  .services__card-item:nth-child(2) {
+    margin-top: 24px;
+  }
+
+  .advantages__list {
+    justify-content: center;
+  }
+
+  .advantages__item:nth-child(1), .advantages__item:nth-child(2), .advantages__item:nth-child(3), .advantages__item:nth-child(4) {
+    margin-top: 22px;
+  }
+
+  .advantages__item {
+    margin-right: 22px;
+  }
+
+  .hotels-card {
+    justify-content: center;
+  }
+
+  .hotels-card__wrapper:nth-child(1), .hotels-card__wrapper:nth-child(2), .hotels-card__wrapper:nth-child(3) {
+    margin-top: 24px;
+  }
+
+  .hotels-card__wrapper {
+    width: 100%;
+    max-width: 543px;
+    margin-right: 24px;
+  }
+
+  .hotels-card__all {
+    width: 100%;
+    max-width: 543px;
+    margin-right: 24px;
+  }
+
+  .hotels-card__img {
+    max-width: 543px;
+    width: 100%;
+  }
+
+  .services__paragraph {
+    font-size: 20px;
+  }
+
+  .contacts__address {
+    background-position: 453px 47px;
+    background-size: 501px;
+  }
+
+  .tour__list {
+    flex-direction: column;
+  }
+
+  .tour__label {
+    margin-right: 50px;
+    font-size: 20px;
+  }
+
+  .tour__item {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tour__select {
+    width: 100%;
+    max-width: 220px;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .tour__form {
+    padding: 31px 57px 32px;
+  }
+
+  .tour__input-offset {
+    width: 100%;
+    max-width: 220px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #c9c9c9;
+  }
+
+  .tour__input {
+    margin-bottom: 15px;
+    margin-left: 3px;
+    font-size: 20px;
+    width: 100%;
+    max-width: 156px;
+  }
+
+  .footer__background {
+    background-position: 598px bottom;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .header__bottom {
+    align-items: flex-start;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .burger__wrapper {
+    width: 100%;
+    max-width: 1210px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding: 14px 45px;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+
+  .burger {
+    width: 30px;
+    height: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .burger__line {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .burger--active
+  .burger__line:nth-child(2) {
+    display: none;
+  }
+
+  .burger--active
+  .burger__line:first-child {
+    align-items: center;
+    transform: translate(0, 10px) rotate(45deg);
+  }
+
+  .burger--active
+  .burger__line:last-child {
+    align-items: center;
+    transform: translate(0, -10px) rotate(-45deg);
+  }
+
+  .header-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 80%;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 80px;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 40px rgb(0 0 0 / 10%);
+    border-radius: 0 30px 30px 0;
+    visibility: hidden;
+    transform: translateX(-120%);
+    transition: visibility 0.6s ease-in-out, transform 0.6s ease-in-out;
+  }
+
+  .header-nav--active {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__item {
+    margin-right: 0;
+    margin-bottom: 20px
+  }
+
+  .nav__link {
+    font-size: 30px;
+  }
+
+  .offers__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offers__banner {
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .offers__big-banner {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .stop-scroll {
+    overflow: hidden;
+  }
+
+  .contacts__address {
+    background-size: 365px;
+  }
+
+  .footer__background {
+    background-position: right bottom;
+    background-size: 175px;
+  }
+}
+
+@media (max-width: 880px) {
+  .contacts__address {
+    background-image: none;
+  }
+
+  .contacts__content {
+    max-width: 100%;
+  }
+
+  .footer__information {
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer__right {
+    max-width: 296px;
+  }
+
+  .footer__left {
+    max-width: 258px;
+ }
+}
+
+@media (max-width: 680px) {
+
+  .header__top {
+    flex-direction: column;
+  }
+
+  .header__tel {
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .header__logo-link {
+    margin-right: auto;
+  }
+
+  .header__information {
+    flex-direction: column;
+  }
+
+  .burger__wrapper {
+    padding: 14px;
+  }
+
+  .header-nav {
+    padding: 40px;
+  }
+
+  .header__buttons-wrapper {
+    flex-direction: column;
+  }
+
+  .header__button:first-child {
+    margin-bottom: 20px;
+  }
+
+  .services__card-content {
+    padding: 20px;
+  }
+
+  .services__paragraph {
+    max-width: 100%;
+  }
+
+  .hotels-card__all {
+    min-width: auto;
+  }
+
+  .tour__label {
+    margin-left: 5px;
+    margin-bottom: 6px;
+  }
+
+  .tour__item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .footer__information {
+    flex-direction: column;
+  }
+
+  .footer__descr {
+    margin-bottom: 10px;
+  }
+
+  .footer__agreement-wrapper {
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 450px) {
+
+  .burger__wrapper {
+    height: 45px;
+  }
+
+  .nav__link {
+    font-size: 25px;
+  }
+
+  .title {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+  }
+
+  .offers__banner-content {
+    padding: 30px;
+  }
+
+  .offers__banner-title {
+    font-size: 35px;
+  }
+
+  .offers__big-banner {
+    min-height: 258px;
+  }
+
+  .offers__big-banner-content {
+    padding: 30px;
+  }
+
+  .offers__big-banner-title {
+    padding-bottom: 15px;
+    font-size: 30px;
+    line-height: 31px;
+  }
+
+  .offers__big-banner-price {
+    padding-bottom: 14px;
+    font-size: 20px
+  }
+
+  .services__link {
+    padding-bottom: 20px;
+    line-height: 120%;
+  }
+
+  .services__paragraph {
+    line-height: 120%;
+  }
+
+  .hotels-card__wrapper {
+    min-height: 330px;
+  }
+
+  .hotels-card__content {
+    padding: 10px;
+  }
+
+  .advantages__item {
+    padding: 20px;
+  }
+
+  .hotels-card__all {
+    min-height: 330px;
+  }
+
+  .hotels-card__all-link {
+    font-size: 16px;
+  }
+
+  .tour__content-wrapper {
+    padding: 0;
+  }
+
+  .tour__form {
+    padding: 20px;
+  }
+
+  .contacts__item {
+    flex-direction: column;
+  }
+
+  .contacts__address {
+    padding: 20px;
+  }
+
+  .contacts__address-header {
+    margin: 0 59px 20px 0;
+  }
+
+  .text-white {
+    line-height: 120%;
+  }
+}
+
+/* Media end */
