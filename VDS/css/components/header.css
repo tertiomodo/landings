@@ -1,0 +1,23 @@
+.header__row {
+  min-height: 80px;
+  padding: 0 165px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--violet);
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header__link {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--white);
+}
