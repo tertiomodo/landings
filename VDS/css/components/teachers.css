@@ -1,0 +1,5 @@
+.teachers__row {
+  min-height: 576px;
+  padding: 0 165px;
+  background-color: var(--deep-blue);
+}
