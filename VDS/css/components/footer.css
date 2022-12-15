@@ -1,0 +1,36 @@
+.footer__row {
+  min-height: 80px;
+  padding: 0 165px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-blue);
+}
+
+.footer__column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__list {
+  width: 100%;
+  max-width: 186px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__row-copyright {
+  min-height: 18px;
+  padding: 0 165px;
+  background-color: var(--white);
+}
+
+.footer__column-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+}

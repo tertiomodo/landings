@@ -1,5 +1,47 @@
 .teachers__row {
   min-height: 576px;
-  padding: 0 165px;
+  padding: 74px 165px 53px 165px;
   background-color: var(--deep-blue);
+}
+
+.teachers__title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.teachers__person-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.teachers__person {
+  width: 100%;
+  max-width: 255px;
+  margin-bottom: 20px;
+}
+
+.teachers__person:not(:last-child) {
+  margin-right: 20px;
+}
+
+.teachers__img {
+  margin-bottom: 26px;
+  border-radius: 21px 21px 0px 0px;
+}
+
+.teachers__name {
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.teachers__descr {
+  line-height: 150%;
+  color: var(--gray-silver);
 }

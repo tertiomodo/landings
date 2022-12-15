@@ -4,10 +4,6 @@
   background-image: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
 }
 
-.hero__bg {
-  background: url('../../assets/img/hero-bg.png') no-repeat center right / 633px 593px;
-}
-
 .hero__content {
   max-width: 459px;
   height: 100%;
@@ -43,4 +39,11 @@
   color: var(--white);
   background: var(--violet);
   border-radius: 20px;
+}
+
+.hero__img {
+  background-image: url('../../assets/img/hero-bg.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 633px 593px;
 }
