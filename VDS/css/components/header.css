@@ -6,6 +6,11 @@
   background-color: var(--violet);
 }
 
+.nav {
+  width: 100%;
+  max-width: 470px;
+}
+
 .header__list {
   display: flex;
   justify-content: space-between;
