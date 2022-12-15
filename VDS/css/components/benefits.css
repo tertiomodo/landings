@@ -23,6 +23,7 @@
 }
 
 .benefits__title {
+  max-width: 475px;
   margin-bottom: 17px;
   font-weight: 700;
   font-size: 40px;
@@ -31,8 +32,6 @@
 }
 
 .benefits__descr {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.1px;
   color: var(--gray);
@@ -44,7 +43,7 @@
   justify-content: space-between;
 }
 
-.benifits__column-bottom {
+.benefits__column-bottom {
   width: 100%;
   max-width: 350px;
   margin-top: 23px;
@@ -55,10 +54,80 @@
   flex-shrink: 1;
 }
 
-.benifits__column-bottom:not(:last-child) {
+.benefits__column-bottom:not(:last-child) {
   margin-right: 10px;
 }
 
-.benifits__bottom-descr {
+.benefits__bottom-img {
+  cursor: pointer;
+}
+
+.benefits__first-img path:first-child {
+  fill: var(--violet);
+  transition: fill 0.3s ease-in-out;
+}
+
+.benefits__first-img path:last-child {
+  fill: var(--deep-blue);
+  transition: fill 0.3s ease-in-out;
+}
+
+.benefits__first-img:hover path:first-child,
+.benefits__first-img:hover path:last-child {
+  fill: var(--pink);
+}
+
+.benefits__first-img:active path:first-child,
+.benefits__first-img:active path:last-child {
+  fill: var(--dark-violet);
+}
+
+.benefits__second-img path:not(:last-child) {
+  fill: var(--deep-blue);
+  transition: fill 0.3s ease-in-out;
+}
+
+.benefits__second-img path:last-child {
+  fill: var(--violet);
+  transition: fill 0.3s ease-in-out;
+}
+
+.benefits__second-img:hover path:not(:last-child),
+.benefits__second-img:hover path:last-child {
+  fill: var(--pink);
+}
+
+.benefits__second-img:active path:not(:last-child),
+.benefits__second-img:active path:last-child {
+  fill: var(--dark-violet);
+}
+
+.benefits__third-img path:first-child {
+  fill: var(--violet);
+  transition: fill 0.3s ease-in-out;
+}
+
+.benefits__third-img path:nth-child(2),
+.benefits__third-img path:nth-child(3) {
+  fill: var(--deep-blue);
+  transition: fill 0.3s ease-in-out;
+}
+
+.benefits__third-img:hover path:first-child,
+.benefits__third-img:hover path:nth-child(2),
+.benefits__third-img:hover path:nth-child(3) {
+  fill: var(--pink);
+}
+
+.benefits__third-img:active path:first-child,
+.benefits__third-img:active path:nth-child(2),
+.benefits__third-img:active path:nth-child(3) {
+  fill: var(--dark-violet);
+}
+
+.benefits__bottom-descr {
   max-width: 240px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--gray);
 }

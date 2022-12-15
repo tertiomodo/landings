@@ -110,6 +110,20 @@
   min-height: 60px;
   line-height: 19px;
   color: var(--white);
-  background: var(--violet);
+  background-color: var(--violet);
   border-radius: 20px;
+  transition: background-color 0.3s ease-in-out;
 }
+
+.courses__content-btn:focus {
+  background-color: var(--pink);
+}
+
+.courses__content-btn:hover {
+  background-color: var(--pink);
+}
+
+.courses__content-btn:active {
+  background-color: var(--dark-violet);
+}
+
