@@ -39,6 +39,19 @@
   color: var(--white);
   background: var(--violet);
   border-radius: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero__button:focus {
+  background-color: var(--pink);
+}
+
+.hero__button:hover {
+  background-color: var(--pink);
+}
+
+.hero__button:active {
+  background-color: var(--dark-violet);
 }
 
 .hero__img {
