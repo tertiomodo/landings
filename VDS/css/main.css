@@ -1,0 +1,17 @@
+/* Main */
+@import 'normalize.css';
+@import 'bootstrap-grid.min.css';
+@import 'variables.css';
+@import 'fonts.css';
+@import 'default.css';
+
+/* Components */
+@import 'components/header.css';
+@import 'components/hero.css';
+@import 'components/benefits.css';
+@import 'components/teachers.css';
+@import 'components/courses.css';
+@import 'components/footer.css';
+
+/* Media */
+@import 'media.css';

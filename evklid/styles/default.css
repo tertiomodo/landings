@@ -1,0 +1,40 @@
+body {
+  min-width: 320px;
+  font-family: 'Montserrat';
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 75px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.button {
+  width: fit-content;
+  height: fit-content;
+  font-weight: 700;
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 16px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
