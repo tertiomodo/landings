@@ -1,7 +1,7 @@
-Evklid: https://tertiomodo.github.io/SB-tasks/evklid
+Evklid: https://tertiomodo.github.io/landings/evklid
 
-Lagoona: https://tertiomodo.github.io/SB-tasks/lagoona
+Lagoona: https://tertiomodo.github.io/landings/lagoona
 
-Lionic: https://tertiomodo.github.io/SB-tasks/lionic
+Lionic: https://tertiomodo.github.io/landings/lionic
 
-Volumetric design school: https://tertiomodo.github.io/SB-tasks/VDS
+Volumetric design school: https://tertiomodo.github.io/landings/VDS
