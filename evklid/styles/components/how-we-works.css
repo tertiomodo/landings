@@ -1,0 +1,151 @@
+.how {
+  margin-bottom: 104px;
+  color: var(--black);
+}
+
+.how__title {
+  margin-bottom: 50px;
+}
+
+.how__step-list {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.how__step-item:not(:last-child) {
+  margin-right: 85.8px;
+}
+
+.how__step-button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  transition: color 0.3s ease-in-out;
+}
+
+.how__step-button:focus {
+  outline-offset: 5px;
+  outline: 2px solid var(--orange);
+}
+
+.how__step-button:hover {
+  color: var(--orange);
+}
+
+/* Tab */
+.how__step-button--active {
+  outline: none;
+  color: var(--orange-active);
+}
+
+.how__content-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Tab */
+.how__content-item {
+  display: none;
+}
+
+/* Tab */
+.how__content-item--active {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.how__content-wrapper {
+  width: 100%;
+  max-width: 758px;
+  margin-right: 20px;
+}
+
+.how__content-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--black);
+}
+
+.how__content-descr {
+  width: 100%;
+  max-width: 758px;
+  margin-bottom: 47px;
+  color: var(--black);
+}
+
+.how__content-btn-more {
+  margin-right: 27px;
+  padding: 20px 38px;
+  font-size: 16px;
+  line-height: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.how__content-btn-more:focus {
+  background-color: var(--orange-hover);
+}
+
+.how__content-btn-more:hover {
+  background-color: var(--orange-hover);
+}
+
+.how__content-btn-more:active {
+  background-color: var(--orange-active);
+}
+
+.how__content-btn-contract {
+  padding: 20px 38px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black);
+  border: 1px solid var(--black);
+  border-radius: 16px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.how__content-btn-contract:focus {
+  color: var(--white);
+  background-color: var(--gray-silver);
+  border: 1px solid var(--gray-silver);
+}
+
+.how__content-btn-contract:hover {
+  color: var(--white);
+  background-color: var(--gray-silver);
+  border: 1px solid var(--gray-silver);
+}
+
+.how__content-btn-contract:active {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.how__content-img {
+  width: 100%;
+  max-width: 870px;
+  min-height: 460px;
+  margin-top: 9px;
+  border-radius: 32px;
+}
+
+.how__content-img1 {
+  background: url('../../assets/img/how-we-works-bg1.jpg') no-repeat center center / cover;
+}
+
+.how__content-img2 {
+  background: url('../../assets/img/how-we-works-bg2.jpg') no-repeat center center / cover;
+}
+
+.how__content-img3 {
+  background: url('../../assets/img/how-we-works-bg3.jpg') no-repeat center center / cover;
+}
+
+.how__content-img4 {
+  background: url('../../assets/img/how-we-works-bg4.jpg') no-repeat center center / cover;
+}
+
+
